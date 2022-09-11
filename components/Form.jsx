@@ -7,7 +7,7 @@ const Form = ({fetchWeather,setCity}) => {
             <form onSubmit={fetchWeather}
                   className='flex justify-between items-center w-full m-auto p-3 bg-transporent border border-gray-300 text-white rounded-2xl'>
                 <div>
-                    <input className='bg-transparent border-none text-white focus:outline-none text-2xl'
+                    <input className='bg-transparent border-none text-white focus:outline-none text-2xl placeholder-gray-600'
                            onChange={(e) => setCity(e.target.value)}
                            type='text'
                            placeholder='Search city'/>
